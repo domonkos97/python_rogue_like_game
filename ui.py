@@ -10,3 +10,8 @@ def display_board(board):
         for cell in row:
             print(cell, end=" ")
         print()
+
+
+def display_player(player):
+    for k, v in player.items():
+        print(f"{k}: {v}")

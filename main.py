@@ -15,8 +15,11 @@ def main():
     The main function defines the game logic, using functions from UI and the controller.
     '''
     os.system('clear')
+    player = controller.create_player()
+    os.system('clear')
     board = controller.create_board(height, width)
     ui.display_board(board)
+    ui.display_player(player)
 
 
 if __name__ == '__main__':
